@@ -30,6 +30,8 @@ theta = np.mat(np.ones((3, 1)))
 
 theta = gradientdescentMulti(X, y, theta, alpha, num_iters)
 
+print(theta)
+
 
 
 
