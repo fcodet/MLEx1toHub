@@ -13,9 +13,9 @@ def gradientdescentMulti(X,y,theta,alpha, num_iters):
         for i in range(0,len(theta)):
             theta[i,0] = theta[i,0] - alpha / m * (X[:,i].transpose()*A)
         J_history[iters] = computeCostMulti(X, y, theta)
-        print J_history[iters]
+        #print J_history[iters]
     Plot(range(0, num_iters), J_history)
-    return theta
+    return [theta ,J_history]
 
 
 

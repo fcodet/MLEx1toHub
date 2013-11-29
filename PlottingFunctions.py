@@ -15,3 +15,10 @@ def SurfacePlot(x,y,z):
 	x, y = np.meshgrid(x, y)
 	ax.plot_surface(x,y,z,rstride=1, cstride=1, cmap=cm.coolwarm, linewidth=0, antialiased=False)
 	plt.show()
+
+def MultiPlot(t, lines):
+
+	ax = plt.axes()
+	for line in lines:
+		ax.plot(t,line)
+	plt.show()
